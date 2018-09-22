@@ -7,14 +7,8 @@ import java.util.Date;
  */
 
 public class Sad extends Mood {
-    protected Date date;
-    protected String mood = "I am sad";
 
     public Sad(){
-        this.date = new Date();
-    }
-
-    public Sad(Date date){
-        this.date = date;
+        setMood("I am sad :(");
     }
 }

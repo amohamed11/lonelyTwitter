@@ -6,19 +6,24 @@ import java.util.Date;
  * Created by amohamed on 9/20/18.
  */
 
-public abstract class Mood {
+public abstract class Mood{
     protected Date date;
     protected String mood;
 
-    public Date getDate(){
-        return this.date;
+
+    public Mood(){
+        this.date = new Date();
     }
 
-    public void setDate(Date date){
+    public Mood(Date date){
         this.date = date;
     }
 
     public String getMood(){
         return this.mood;
+    }
+
+    public void setMood(String mood){
+        this.mood = mood;
     }
 }

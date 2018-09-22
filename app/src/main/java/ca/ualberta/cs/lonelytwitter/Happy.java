@@ -7,14 +7,8 @@ import java.util.Date;
  */
 
 public class Happy extends Mood {
-    protected Date date;
-    protected String mood = "I am happy";
-
     public Happy(){
-        this.date = new Date();
+        setMood("I am Happy :)");
     }
 
-    public Happy(Date date){
-        this.date = date;
-    }
 }
